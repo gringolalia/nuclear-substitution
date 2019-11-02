@@ -66,9 +66,9 @@ $colors: map-merge((
   "gray-dark":  $gray-800
 ), $colors);
 
-$primary:       #288cff;
-$secondary:     #e8f2ff;
-$tertiary:      #192b3f;
+$primary:       #607d8b;
+$secondary:     #536872;
+$tertiary:      #6699cc;
 $success:       $green;
 $info:          $teal;
 $warning:       $orange;
@@ -190,8 +190,8 @@ $transition-collapse:         height .35s ease;
 
 // Fonts
 
-$font-family-base: 'Nunito', sans-serif;
-$font-family-alt: 'Nunito', sans-serif;
+$font-family-base: 'News Cycle', sans-serif;
+$font-family-alt: 'News Cycle', sans-serif;
 
 $font-size-base:              .875rem; // Assumes the browser default, typically `16px`
 $font-size-xl:                ($font-size-base * 1.5);

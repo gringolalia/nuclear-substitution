@@ -1,26 +1,32 @@
 <template lang="pug">
 #app
-  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.rounded
+  nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.rounded.fixed-top
     a.navbar-brand(href='#') 
-      i.fas.fa-sun.fa-2x
+      i.fas.fa-sun.fa-lg
       | &nbsp; Engenho Novo LLC
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar_example_1' aria-controls='navbar_example_1' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     .collapse.navbar-collapse#navbar_example_1
       ul.navbar-nav.mr-auto
         li.nav-item.active
-          a.nav-link(href='#')
+          a.nav-link(href='/')
             | In Principio 
             span.sr-only (current)
         li.nav-item
-          a.nav-link(href='#') In Media Res
+          a.nav-link(href='/about') In Media Res
         li.nav-item.dropdown
           a.nav-link.dropdown-toggle#navbar_1_dropdown_1(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Arbitria
           .dropdown-menu(aria-labelledby='navbar_1_dropdown_1')
             a.dropdown-item(href='#') Nero Was No Hero
             a.dropdown-item(href='#') Commodus Caesar
+            a.dropdown-item(href='#') Augustus Caesar
+            a.dropdown-item(href='#') James Tiberius Kirk
             .dropdown-divider
             a.dropdown-item(href='#') Julius Caesar
+            a.dropdown-item(href='#') Caesar Salad
+            a.dropdown-item(href='#') Caesar's Palace
+            a.dropdown-item(href='#') Kaisers &amp; Czars
+            a.dropdown-item(href='#') Caesarian Section
         li.nav-item
           a.nav-link.disabled(href='#') Augustus Caesar
       ul.navbar-nav.ml-auto
@@ -107,5 +113,9 @@
   i, .material-icons, .fa, .fas {
     vertical-align: middle;
   }
+
+a.dropdown-item {
+  font-size: 30px;
+}
 
 </style>
